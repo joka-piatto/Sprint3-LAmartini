@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Final - JS</title>
+    <link rel="shortcut icon" href="Imagem/taça.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <style>
+        .navbar{
+            background-color: rgb(0, 0, 0);
+        }
+
+        body{
+            background-color: #e5e2d1;
+        }
+
+        .mei2{
+            margin-left: 80px;
+        }
+        
+        .esqu{
+            float: right;
+            margin-right: 350px;
+            padding-right: 15px;
+            margin-top: -130px;
+            
+        }
+
+        .m_meio{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .m_meio img{
+            float: left;
+            text-align: center;
+            margin: 53px;
+            margin-left: 70px;
+            width: 180px;
+            height: 200px;
+        }
+
+        .linha{
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            border-top: solid 3px rgba(53, 53, 53, 0.937);
+            width: 100%;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        .roda{
+            margin-top: 25px;
+            height: 310px;
+            background-color: rgb(0, 0, 0);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 0px -10px 10px rgba(128, 126, 126, 0.8);
+        }
+        .roda .down_up{
+            color: rgb(240, 233, 233);
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+           
+        }
+        .roda .down_meio{
+            color: rgb(240, 233, 233);
+            font-size: 1em;
+            text-align: center;         
+            
+        }
+        .roda .down_down{
+            margin-top: -20px;
+            text-align: center;
+           
+        }
+        .roda .down_down img{
+            width: 40px;
+            border-radius: 25px;
+            border: 2px rgb(240, 233, 233) dotted;
+            cursor: pointer;
+            margin: 20px;
+            padding: 5px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Just an image -->
+        <nav class="navbar">
+        <a class="" href="#">
+            <img src="Imagem/logo-taça00.png" width="80px" height="80px" alt="Logo">
+        </a>
+        </nav>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="index_home.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false" style="color: white">HOME</a>   
+                </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white" >PRODUTOS</a>                    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="bebidas.html" >Bebidas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="petis.html">Petiscos</a>
+                    </div>
+                </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="conheça-nos.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">CONHEÇA-NOS</a>   
+                </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="peça-já.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">PEÇA JÁ</a>   
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquise agora" aria-label="Search">
+                <button class="my-2 my-sm-0" style="background-color: #a8a8a8;" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <br>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="coisas do projeto/carrossel/banner_2.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="coisas do projeto/tudo/carr.2tabua.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="coisas do projeto/tudo/banner_1.gif" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>    
+
+    <br>
+    
+
+    <div class="row m-3">
+
+        <div class=" col-sm-12 col-lg-4" style="width: 18rem;">
+            <img class="card-img-top" src="Imagem/Card-Home01.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Red Fruits</h5>
+                <p class="card-text">Aqui você encontra um mix de sabores! Uma mistura de frutas vermelhas para compor sua bebida e te dar a melhor expriência da sua vida. Experimente já!</p>
+
+                <!-- Botão para acionar modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                    Ingredientes
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contém:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Morango expremido</li>
+                                <li>Licor de frutas vermelhas</li>
+                                <li>Vodka</li>
+                                <li>Charope de mel</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" col-sm-12 col-lg-4" style="width: 18rem;">
+            <img class="card-img-top" src="Imagem/Card-home02.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Tábua-G</h5>
+                <p class="card-text">Nossa tábua de petiscos caseira te proporciona uma explosão de sabores! Você pode escolher o que quer comer, pois no La Martini nossos clientes tem liberdade.</p>
+                
+                <!-- Botão para acionar modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1">
+                    Ingredientes
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contém:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        Nesta linda tábua vem uma porção de petíscos, como vários tipos de queijo para acompanhar seus drinks e taças, salame, azeitonas, porções de carne, batatas e muitas outras opções para te satisfazer.  
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" col-sm-12 col-lg-4" style="width: 18rem;">
+            <img class="card-img-top" src="Imagem/Card-home03.png" alt="Card image cap" >
+            <div class="card-body">
+                <h5 class="card-title">Bebidas Cítricas</h5>
+                <p class="card-text">Temos uma variedade de bebidas cítricas para satisfazer todos os paladares.</p>
+                <br>
+                <!-- Botão para acionar modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2">
+                    Ingredientes
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contém:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Limão expremido</li>
+                                <li>Suco de laranja</li>
+                                <li>Abacaxi batido</li>
+                                <li>Gim</li>
+                                <li>Fatias de laranja</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal" id="id-mod123" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br>
+
+    <div class="linha"></div>
+
+    <br>
+
+    <div class="row"></div>
+        <div class="m_meio col-sm-12 col-lg-12">
+            <h1 style="text-align: center; text-shadow: 5px 5px 8px black;">Criadores</h1>
+            <img src="Imagem/Foto - criss.jpeg" alt="Criadores" style="padding-left: 10px ;">
+            <img src="Imagem/Foto - manu.jpeg" alt="Criadores" style="padding-left: 10px ;">
+            <img src="Imagem/Foto - piatto.jpeg" alt="Criadores" style="padding-left: 10px ;">
+            <img src="Imagem/Foto- duda.jpeg" alt="Criadores" style="padding-left: 10px ;">
+            <img src="Imagem/Foto - vieira.jpeg" alt="Criadores" style="padding-left: 10px ;">
+        </div>
+
+    <div class="clear"></div>
+
+    <div class="roda">
+      <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div class="down_up">Drinkeria</div>
+                <div class="down_meio">Drinkeria feita para você!<br><p style="margin-left: 29px;">#DrinkPraVocê</p></div>
+                <div class="down_down">
+                    <a href="https://pt-br.facebook.com/" target="_blank"><img src="Imagem/face_logo.png"></a>
+                    <a href="https://web.whatsapp.com" target="_blank"><img src="Imagem/whats_logo.png"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagem/inst_logo.png"></a>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6" >
+                <div class="down_meio">
+                    <br><br>
+                    <p style="color: white">&copy; Tec. Multimídea - SENAI-SP - Cunho EDUCATIVO </p>
+                    <div class="mei2"><p style="color: white">Santa Cruz do Rio Pardo - SP</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+<!-- Importando o jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+<!-- Importando o js do bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
+
+<!--card col-sm-12 col-md-4-->

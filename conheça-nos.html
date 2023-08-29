@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Final - JS</title>
+    <link rel="shortcut icon" href="Imagem/taça.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <style>
+        .navbar{
+            background-color: black;
+        }        
+
+        body{
+            background-color: #e5e2d1;
+        }
+
+        .coluna{
+        columns: 4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        }
+
+        .coluna p{
+            padding-left: 20px;
+        }
+
+        .coluna img{
+            width: 100%;
+        }
+        
+        .mei{
+            text-align: center;
+            text-shadow: 6px 6px 8px black;
+        }
+
+        .roda{
+            margin-top: 25px;
+            height: 310px;
+            background-color: rgb(0, 0, 0);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 0px -10px 10px rgba(128, 126, 126, 0.8);
+        }
+        .roda .down_up{
+            color: rgb(240, 233, 233);
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+           
+        }
+        .roda .down_meio{
+            color: rgb(240, 233, 233);
+            font-size: 1em;
+            text-align: center;         
+            
+        }
+        .roda .down_down{
+            margin-top: -20px;
+            text-align: center;
+           
+        }
+        .roda .down_down img{
+            width: 40px;
+            border-radius: 25px;
+            border: 2px rgb(240, 233, 233) dotted;
+            cursor: pointer;
+            margin: 20px;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Just an image -->
+        <nav class="navbar">
+        <a class="" href="#">
+            <img src="Imagem/logo-taça00.png" width="80px" height="80px" alt="Logo">
+        </a>
+        </nav>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="index_home.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false" style="color: white">HOME</a>   
+                </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white" >PRODUTOS</a>                    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="bebidas.html" >Bebidas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="petis.html">Petiscos</a>
+                    </div>
+                </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="conheça-nos.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">CONHEÇA-NOS</a>   
+                </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                    </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="peça-já.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">PEÇA JÁ</a>   
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquise agora" aria-label="Search">
+                <button class="my-2 my-sm-0" style="background-color: #a8a8a8;" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <br>
+
+    <div>
+        <div class=" col-sm-12 col-lg-12">
+            <figure>
+                <img src="Imagem/banner_1.gif" alt="gif" width="100%">
+            </figure>
+        </div>
+    </div>
+    <br>
+
+    <div class="mei"><h1>Nossa História</h1></div>
+
+    <br>
+
+    <div class="row m-2">
+        <div class="col-md-4 col-sm-12">
+            <p class="text-justify m-1">
+                La Martini é uma empresa plenamente preparada para atender você e sua família! Escolha os ingredientes e tenha uma explosão de sabores! </p>
+               <img src="Imagem/ses-senai.png" class="w-100 mt-2 mb-2">
+            <p class="text-justify m-1">
+                La Martini é uma empresa plenamente preparada para atender você e sua família! Venha conhecer nossos produtos e estabelecimento.
+                Somos uma equipe pronta para atender até os paladares mais exigentes! Nascemos em um curso técnico de Multimídia e a partir daí, nos juntamos a fim de nos aventurar pelo mundo. A ideia de drinkeria veio por meio de uma de nossas organizadoras, servindo de base para a construção de um grande sonho: Drinkeria e Wine Bar. 
+                Atualmente, nos localizamos em Barcelona, lugar onde as bebidas ganham o coração de qualquer turista. Nossa estrutura comporta um quarto de toda a Espanha. Temos locações por todo o mundo, inclusive em nosso país natal: o Brasil. A ideia de drinkeria veio por meio de uma de nossas organizadoras, servindo de base para a construção de um grande sonho: Drinkeria e Wine Bar. Atualmente, nos localizamos em Barcelona, lugar onde as bebidas ganham o coração de qualquer turista. Drinkeria e Wine Bar.La Martini é uma empresa plenamente preparada para atender você e sua família! Venha conhecer nossos produtos e estabelecimento.
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <img src="Imagem/5-passos-para-fazer-o-trabalho-em-equipe-funcionar-e1572442514946-1600x900.jpg" class="w-100 ">
+            <p class="text-justify m-1">
+                Para a gestão, contamos com cinco sócios, todos muito bem preparados e competentes para o serviço em que lhes foi dado. Ambos contribuem para o crescimento da empresa La Martini, se dedicando cem porcento para o sucesso da mesma, uma vez que nosso sucesso, é o sucesso deles também. Atualmente, contamos com 100 funcionários para cada locação, onde todos se dispõe de forma íntegra a te ajudar!
+                Para a gestão, contamos com cinco sócios, todos muito bem preparados e competentes para o serviço em que lhes foi dado. Ambos contribuem para o crescimento da empresa La Martini, se dedicando cem porcento para o sucesso da mesma, uma vez que nosso sucesso, é o sucesso deles também. Atualmente, contamos com 100 funcionários para cada locação, onde todos se dispõe de forma íntegra a te ajudar!
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h3 class="mei">Inicío do Projeto</h3>
+            <img src="Imagem/La Martini.png" class="w-100 ">
+            <p class="text-justify m-1">
+                La Martini é uma empresa plenamente preparada para atender você e sua família! Venha conhecer nossos produtos e estabelecimento.
+                Somos uma equipe pronta para atender até os paladares mais exigentes! Nascemos em um curso técnico de Multimídia e a partir daí, nos juntamos a fim de nos aventurar pelo mundo. A ideia de drinkeria veio por meio de uma de nossas organizadoras, servindo de base para a construção de um grande sonho: Drinkeria e Wine Bar. 
+                Atualmente, nos localizamos em Barcelona, lugar onde as bebidas ganham o coração de qualquer turista. Nossa estrutura comporta um quarto de toda a Espanha. Temos locações por todo o mundo, inclusive em nosso país natal: o Brasil.
+            </p>  
+        </div>
+    </div>
+
+    <br>
+
+    <div style="background-color: rgba(82, 34, 0, 0.929);">
+        <p style="color: rgba(82, 34, 0, 0.929);">.</p>
+        <p style="color: rgba(82, 34, 0, 0.929);">.</p>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-12 col-lg-4 m-1" style="text-align: center; font-family: cursive;">
+            <p class="m-1"><h3>AQUI</h3>temos a localização da nossa franquia.</p>
+            <p class="m-1">Esta se localiza em <h2>Barcelona</h2> e é umas das mais fomosas do mundo!!!</p>
+            <h1 class="m-1">VENHA NOS VISITAR,</h1><p> estamos te esperando!</p>
+        </div>
+
+        <div class="col-sm-12 col-lg-7" style="float: right;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d748.3900142081402!2d2.1832795789435697!3d41.38364216120689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2fe3b1d1c53%3A0xa395283b5491c174!2sParadiso!5e0!3m2!1spt-BR!2sbr!4v1678715362778!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+        </div>
+
+    </div>
+
+    <div class="roda">
+        <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                  <div class="down_up">Drinkeria</div>
+                  <div class="down_meio">Drinkeria feita para você!<br><p style="margin-left: 29px;">#DrinkPraVocê</p></div>
+                  <div class="down_down">
+                      <a href="https://pt-br.facebook.com/" target="_blank"><img src="Imagem/face_logo.png"></a>
+                      <a href="https://web.whatsapp.com" target="_blank"><img src="Imagem/whats_logo.png"></a>
+                      <a href="https://www.instagram.com" target="_blank"><img src="Imagem/inst_logo.png"></a>
+                  </div>
+              </div>
+  
+              <div class="col-sm-12 col-lg-6" >
+                  <div class="down_meio">
+                      <br><br>
+                      <p style="color: white">&copy; Tec. Multimídea - SENAI-SP - Cunho EDUCATIVO </p>
+                      <div class="mei2"><p style="color: white">Santa Cruz do Rio Pardo - SP</p></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        
+
+</body>
+
+<!-- Importando o jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+<!-- Importando o js do bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
